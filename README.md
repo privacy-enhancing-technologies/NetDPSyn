@@ -1,6 +1,9 @@
-<img src="netdpsyn-logo.png" alt="Project Logo" width="200">
-
-# NetDPSyn: Synthesizing Network Traces under Differential Privacy
+<table>
+  <tr>
+    <td><img src="netdpsyn-logo.png" alt="Project Logo" width="100"></td>
+    <td><h1>NetDPSyn: Synthesizing Network Traces under Differential Privacy</h1></td>
+  </tr>
+</table>
 
 ## Introduction
 
