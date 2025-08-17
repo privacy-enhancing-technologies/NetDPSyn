@@ -1,4 +1,4 @@
-# [IMC'24] NetDPSyn: Synthesizing Network Traces under Differential Privacy
+# NetDPSyn: Synthesizing Network Traces under Differential Privacy
 
 ## Introduction
 
