@@ -1,4 +1,4 @@
-![Project Logo](netdpsyn-logo.png)
+<img src="netdpsyn-logo.png" alt="Project Logo" width="150">
 
 # NetDPSyn: Synthesizing Network Traces under Differential Privacy
 
