@@ -1,9 +1,14 @@
-<table>
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><img src="netdpsyn-logo.png" alt="Project Logo" width="100"></td>
-    <td><h1>NetDPSyn: Synthesizing Network Traces under Differential Privacy</h1></td>
+    <td style="border:none;">
+      <img src="netdpsyn-logo.png" alt="Project Logo" width="150">
+    </td>
+    <td style="border:none; vertical-align: middle; padding-left: 15px;">
+      <h1>NetDPSyn: Synthesizing Network Traces under Differential Privacy</h1>
+    </td>
   </tr>
 </table>
+
 
 ## Introduction
 
