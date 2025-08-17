@@ -1,3 +1,5 @@
+![Project Logo](netdpsyn-logo.png)
+
 # NetDPSyn: Synthesizing Network Traces under Differential Privacy
 
 ## Introduction
