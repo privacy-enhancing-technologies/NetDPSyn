@@ -5,9 +5,6 @@
 This repository contains code for the paper: NetDPSyn: Synthesizing Network Traces under Differential Privacy. NetDPSyn is the first system to synthesize high-fidelity network traces under privacy guarantees.
 
 ## Experimental setup
-1. Clone this repo from the GitHub.
-
-        git clone https://github.com/DanyuSun/NetDPSyn.git
 
 1. Download the raw datasets from [here](https://drive.google.com/drive/folders/1MHRJxLhnJWZln8XBCon9UrN_EwVj14BE). And save them in `./temp_data/raw_data/` folder.
 
