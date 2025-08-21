@@ -1,5 +1,5 @@
 <div align="left" style="display: flex; align-items: center;">
-  <img src="netdpsyn-logo.png" alt="Project Logo" width="150" style="margin-right: 20px;" />
+  <img src="netdpsyn-logo.jpg" alt="Project Logo" width="150" style="margin-right: 20px;" />
   <h1>NetDPSyn: Synthesizing Network Traces under Differential Privacy</h1>
 </div>
 
