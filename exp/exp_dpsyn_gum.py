@@ -24,7 +24,7 @@ class ExpDPSynGUM(ExpDPSyn):
             marginal_name = self.args['dump_marginal']
             self.selected_attrs = tuple(marginal_name.split("_"))
 
-        ################################## main procedure ##########################################
+        ################################## main procedure #########################################
         self.preprocessing()
         self.construct_views()
         for key, view in self.views_dict.items():
@@ -93,6 +93,7 @@ class ExpDPSynGUM(ExpDPSyn):
                 self.anonymize_view(view, rho=view.rho)                
             else:
                 raise Exception("invalid noise adding method")
+        ##### comment this ######
         # for key, view in self.views_dict.items():
         #     print('key', key)
         #     print('view', len(view.count))
