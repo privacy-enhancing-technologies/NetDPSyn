@@ -12,7 +12,11 @@ This repository contains code for the paper: NetDPSyn: Synthesizing Network Trac
 
 1. Download the raw datasets from [here](https://drive.google.com/drive/folders/1MHRJxLhnJWZln8XBCon9UrN_EwVj14BE). And save them in `./temp_data/raw_data/` folder.
 
-2. Your directory structure should look like this:
+2. Install all dependencies listed in requirements.txt:
+
+        pip install -r requirements.txt
+
+3. Your directory structure should look like this:
 
         NetDPSyn
            └── temp_data
