@@ -10,5 +10,5 @@ ALL_PATH = [RAW_DATA_PATH, PROCESSED_DATA_PATH, SYNTHESIZED_RECORDS_PATH, MARGIN
 
 
 # config file path
-TYPE_CONIFG_PATH = "fields.json"
+TYPE_CONFIG_PATH = "fields.json"
 MARGINAL_INIT = [('srcport', 'proto', 'flag'), ('dstport', 'proto', 'flag')]

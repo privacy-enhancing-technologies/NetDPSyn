@@ -160,6 +160,7 @@ class PreprocessNetwork:
         with open(config_dpsyn.PROCESSED_DATA_PATH + mapping_filename, 'wb') as file:
             pickle.dump(self.mappings, file)
 
+
     def reverse_mapping(self):
         self.logger.info("reverse mapping")
         for column, mapping in self.mappings.items():
@@ -263,8 +264,11 @@ class PreprocessNetwork:
     def save_data_csv(self, csv_filename):
         self.logger.info("save df to csv file")
         # Save the Decoded Dataset to a CSV File
-        with open(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, 'wb') as file:
-            self.df.to_csv(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, index=False)
+        out_path = os.path.join(config_dpsyn.SYNTHESIZED_RECORDS_PATH, csv_filename)
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        
+        # with open(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, 'wb') as file:
+        #     self.df.to_csv(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, index=False)
 
 def main(args):
     output_file = None
