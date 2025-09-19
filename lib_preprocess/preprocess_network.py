@@ -154,11 +154,23 @@ class PreprocessNetwork:
         dataset = Dataset(self.df, domain)
 
         #Save the Encoded Dataset to a Pickle File
-        with open(config_dpsyn.PROCESSED_DATA_PATH + pickle_filename, 'wb') as file:
-            pickle.dump(dataset, open(config_dpsyn.PROCESSED_DATA_PATH + pickle_filename, 'wb'))
-        #Save the Mappings to another Pickle File
-        with open(config_dpsyn.PROCESSED_DATA_PATH + mapping_filename, 'wb') as file:
-            pickle.dump(self.mappings, file)
+        # with open(config_dpsyn.PROCESSED_DATA_PATH + pickle_filename, 'wb') as file:
+        #     pickle.dump(dataset, open(config_dpsyn.PROCESSED_DATA_PATH + pickle_filename, 'wb'))
+        # #Save the Mappings to another Pickle File
+        # with open(config_dpsyn.PROCESSED_DATA_PATH + mapping_filename, 'wb') as file:
+        #     pickle.dump(self.mappings, file)
+        
+        # edit a bug of pickle
+        out1 = os.path.join(config_dpsyn.PROCESSED_DATA_PATH, pickle_filename)
+        out2 = os.path.join(config_dpsyn.PROCESSED_DATA_PATH, mapping_filename)
+
+        # Save the encoded dataset
+        with open(out1, "wb") as f:
+            pickle.dump(dataset, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+        # Save the mappings
+        with open(out2, "wb") as f:
+            pickle.dump(self.mappings, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 
     def reverse_mapping(self):
@@ -266,7 +278,7 @@ class PreprocessNetwork:
         # Save the Decoded Dataset to a CSV File
         out_path = os.path.join(config_dpsyn.SYNTHESIZED_RECORDS_PATH, csv_filename)
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        
+
         # with open(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, 'wb') as file:
         #     self.df.to_csv(config_dpsyn.SYNTHESIZED_RECORDS_PATH + csv_filename, index=False)
 
